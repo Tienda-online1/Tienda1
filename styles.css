@@ -1,0 +1,265 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    background-color: rgba(192, 192, 192, 0.9); /* Gris con algo de transparencia */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.logo {
+    width: 300px; /* Ajustar el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 20px; /* Tamaño de las etiquetas */
+}
+
+.login-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px; /* Tamaño de las entradas de texto */
+    opacity: 1; /* Hacer los campos de entrada completamente visibles */
+}
+
+/* Password más tenue */
+.login-container input[type="password"] {
+    opacity: 0.8; /* Hacer el campo de Password un poco menos visible */
+}
+
+.login-container button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Tamaño del texto del botón */
+}
+
+.login-container button:hover {
+    background-color: #e21010; /* Gris ratón */
+}
+
+.extra-links {
+    margin: 20px 0;
+}
+
+.extra-links a {
+    display: block;
+    margin-bottom: 5px;
+    color: #0619c4;
+    text-decoration: none;
+    font-size: 20px; /* Tamaño del texto de los enlaces */
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
+.language-selector label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px; /* Tamaño de la etiqueta del selector */
+}
+
+.language-selector select {
+    padding: 5px;
+    border: 1px solid #0e0d0d;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 14px; /* Tamaño del texto del selector */
+}
+
+/* Sección de la imagen de fondo */
+.background-section {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 50vh; /* Mitad del alto del viewport */
+    background-image: url('background-image.jpg'); /* Colocar la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1; /* Colocar por encima del contenido */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex; /* Mostrar elementos en línea */
+    height: 100vh; /* Alto completo del viewport */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    position: relative;
+}
+
+/* Barra lateral desplegable */
+.sidebar {
+    width: 200px; /* Ancho de la barra lateral */
+    height: 100%;
+    background-color: #333; /* Color de fondo */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2; /* Colocar por encima de la imagen de fondo */
+    overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+    transition: transform 0.3s ease; /* Transición suave para despliegue */
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Mostrar la barra lateral */
+}
+
+.sidebar-menu {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-menu a:hover {
+    text-decoration: underline;
+}
+
+
+.dropdown-menu {
+    display: none;
+    background-color: #555; /* Color de fondo para el menú desplegable */
+    padding-left: 20px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar-menu li:hover .dropdown-menu {
+    display: block; /* Mostrar el menú desplegable al pasar el cursor */
+}
+
+#sidebar-open-button {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#sidebar-open-button:hover {
+    background-color: #555;
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #555; /* Cambiar color de fondo al pasar el cursor */
+}
+
+/* Estilo para el menú desplegable */
+.sidebar .dropdown-menu {
+    display: none;
+    background-color: #555; /* Color de fondo para el menú desplegable */
+}
+
+.sidebar .dropdown-menu li {
+    padding-left: 20px;
+}
+
+.sidebar .dropdown-menu a {
+    color: #fff;
+}
+
+.sidebar li:hover .dropdown-menu {
+    display: block; /* Mostrar el menú desplegable al pasar el cursor */
+}
+
+/* Contenido principal */
+.main-section {
+    flex: 1; /* Ocupa todo el espacio restante */
+    background-color: #fff; /* Color de fondo blanco */
+    padding: 20px; /* Espaciado interior */
+    box-sizing: border-box; /* Incluir padding en el ancho y alto */
+    overflow-y: auto; /* Habilitar desplazamiento vertical si es necesario */
+}
+
+/* Mensajes de bienvenida y opciones */
+.welcome-messages {
+    margin-top: 20px;
+}
+
+.welcome-messages p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.welcome-messages p a {
+    color: #007bff; /* Color azul para enlaces */
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.welcome-messages p a:hover {
+    text-decoration: underline;
+}
+
+
