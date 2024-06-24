@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda</title>
+    <link rel="stylesheet" href="styles3.css" />
+</head>
+<body>
+    <div class="top-section">
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="#">Cuentas</a></li>
+                <li><a href="#">Transacciones</a></li>
+                <li><a href="#">Detalles de la cuenta</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Soporte</a>
+                    <div class="dropdown-content">
+                        <a href="#">FAQ</a>
+                        <a href="#">Contactar</a>
+                    </div>
+                </li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </div>
+        <div class="main-content" id="main-content">
+            <div class="background-top">
+    <header>
+        <button class="menu-btn" id="menu-btn">&#9776;</button>
+        <h1>Tienda</h1>
+        <div class="container-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                <path stroke-linecap="round" 
+                stroke-linejoin="round" 
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+            </svg>
+            <div class="count-products">
+                <span id="contador-productos">0</span>
+            </div>
+            <div class="container-cart-products hidden-cart">
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <!--<p class="titulo-producto-carrito">Zapatos Nike</p>-->
+                        <p class="empty-cart-message">Tu carrito está vacío. Agrega productos para verlos aquí.</p>
+                        <!--<span class="precio-producto-carrito">$80</span>-->
+                    </div>-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </div>
+                <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$0</span>
+                </div>
+                <p class="empty-cart-message hidden">El carrito está vacío.</p>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="bottom-section">
+    <div class="container-items">
+        <div class="item">
+            <figure>
+                <img src="img/netflix.png" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a netflix</h2>
+                <p class="price">$8000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/amazon.jpeg" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a amazon prime video</h2>
+                <p class="price">$8500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/hbomax.jpeg" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a HBOmax</h2>
+                <p class="price">$8000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/spotify.png" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a spotify</h2>
+                <p class="price">$5000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/canva.jpeg" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a canva</h2>
+                <p class="price">$6000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/netflix.png" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a netflix</h2>
+                <p class="price">$8000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/amazon.jpeg" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a amazon prime video</h2>
+                <p class="price">$8500</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/hbomax.jpeg" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a HBOmax</h2>
+                <p class="price">$8000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/spotify.png" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a spotify</h2>
+                <p class="price">$5000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="item">
+            <figure>
+                <img src="img/canva.jpeg" alt="producto"/>
+            </figure>
+            <div class="info-product">
+                <h2>membresia por 1 mes a canva</h2>
+                <p class="price">$6000</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script1.js"></script>
+</body>
+</html>
