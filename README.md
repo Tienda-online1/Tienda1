@@ -4,4 +4,4 @@ Este es la elaboración de un proyecto de una tienda online
 -leonardo salas
 -Johans Villanueva
 -Diana Yuridia Marin Payoma
--Luz Edith Esquivel Giraldo
+-Luz Edith Esquivel
