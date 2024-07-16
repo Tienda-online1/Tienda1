@@ -1,0 +1,121 @@
+
+.btn-register{
+    margin-top: 1em;
+    background-color: white !important;
+    color: #007bff !important;
+    font-size: 9px !important;
+    border: none !important;
+    height: auto !important;
+}
+
+.body-login{
+    font-family: Arial, sans-serif;
+    background-image: url('../../../public/productos/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    background-color: rgba(192, 192, 192, 0.9); /* Gris con algo de transparencia */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.logo {
+    width: 300px; /* Ajustar el tamaño según sea necesario */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 20px; /* Tamaño de las etiquetas */
+}
+
+.login-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px; /* Tamaño de las entradas de texto */
+    opacity: 1; /* Hacer los campos de entrada completamente visibles */
+}
+
+/* Password más tenue */
+.login-container input[type="password"] {
+    opacity: 0.8; /* Hacer el campo de Password un poco menos visible */
+}
+
+.login-container button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Tamaño del texto del botón */
+}
+
+.login-container button:hover {
+    background-color: #e21010; /* Gris ratón */
+}
+
+.extra-links {
+    margin: 20px 0;
+}
+
+.extra-links a {
+    display: block;
+    margin-bottom: 5px;
+    color: #0619c4;
+    text-decoration: none;
+    font-size: 20px; /* Tamaño del texto de los enlaces */
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+.language-selector {
+    margin-top: 20px;
+}
+
+.language-selector label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px; /* Tamaño de la etiqueta del selector */
+}
+
+.language-selector select {
+    padding: 5px;
+    border: 1px solid #0e0d0d;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 14px; /* Tamaño del texto del selector */
+}
+
+.login-container .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 1em;
+}
